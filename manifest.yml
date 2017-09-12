@@ -1,0 +1,10 @@
+---
+applications:
+  - name: cg-parking-t
+    buildpack: java_buildpack
+    memory: 512M
+    path: target/cg-parking-0.0.1-SNAPSHOT.jar
+    timeout : 180
+env:
+   SPRING_PROFILES_ACTIVE : cloud
+   
